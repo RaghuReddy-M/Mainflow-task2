@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('restaurant_background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            text-align: center;
+            padding: 20px;
+            color: #ffffff; /* Text color for better contrast */
+        }
+        .container {
+            background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            margin: 20px;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #ffffff;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            min-width: 200px;
+            text-align: left;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .dropdown-item {
+            padding: 8px 0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .dropdown-item:last-child {
+            border-bottom: none;
+        }
+        .dropdown-item a {
+            display: block;
+            padding: 8px 16px;
+            text-decoration: none;
+            color: #333333;
+            transition: background-color 0.3s;
+        }
+        .dropdown-item a:hover {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1> Menu</h1>
+        
+        <div class="dropdown">
+            <span>Appetizers</span>
+            <div class="dropdown-content">
+                <div class="dropdown-item"><a href="#">Garlic Bread</a></div>
+                <div class="dropdown-item"><a href="#">Caprese Salad</a></div>
+                <div class="dropdown-item"><a href="#">Chicken Wings</a></div>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <span>Main Courses</span>
+            <div class="dropdown-content">
+                <div class="dropdown-item"><a href="#">Grilled Salmon</a></div>
+                <div class="dropdown-item"><a href="#">Pasta Carbonara</a></div>
+                <div class="dropdown-item"><a href="#">Steak with Chimichurri</a></div>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <span>Desserts</span>
+            <div class="dropdown-content">
+                <div class="dropdown-item"><a href="#">Tiramisu</a></div>
+                <div class="dropdown-item"><a href="#">Chocolate Cake</a></div>
+                <div class="dropdown-item"><a href="#">Fruit Tart</a></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
